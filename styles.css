@@ -1,0 +1,275 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1B1B1E; /* Fondo Negro Mate */
+    color: #FFFFFF; /* Texto Blanco */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    margin-top:10px;
+    width: 64%;
+    padding: 1rem 0;
+    background-color: #2D2354; /* Morado Oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fixed-logo {
+    position: fixed; /* Fija el logo en la pantalla */
+    top: 66px; /* Ajusta según el espacio deseado desde el borde superior */
+    left: 507px; /* Ajusta según el espacio deseado desde el borde izquierdo */
+    width: 300px; /* Ajusta el tamaño del logo */
+    height: auto;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.header .logo {
+    color: #1EFF8F; /* Verde Eléctrico */
+    margin-left: 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.header .nav a {
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 100px;
+    transition: color 0.3s ease;
+}
+.header .nav a:hover {
+    color: #00D9F6; /* Azul Neon */
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 24%;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background-color: #2D2354; /* Morado Oscuro */
+}
+.hero-text {
+    font-size: 2.5rem;
+    color: #00D9F6; /* Azul Neon */
+}
+.hero-subtext {
+    font-size: 1.2rem;
+    color: #FFFFFF; /* Blanco */
+}
+.btn-cta {
+    background-color: #1EFF8F; /* Verde Eléctrico */
+    color: #1B1B1E; /* Negro para contraste */
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.btn-cta:hover {
+    background-color: #FF4DFF; /* Rosa Neon */
+}
+
+/* Sección Entradas */
+.compra {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 2rem;
+}
+.entradas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.entrada {
+    background-color: #2E2E3E; /* Gris Oscuro */
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 45%;
+    color: #FFFFFF; /* Blanco */
+}
+.entrada h3 {
+    color: #1EFF8F; /* Verde Eléctrico */
+}
+.precio {
+    font-size: 1.2rem;
+    color: #00D9F6; /* Azul Neon */
+}
+button {
+    padding: 0.6rem 1.2rem;
+    background-color: #FF4DFF; /* Rosa Neon */
+    color: #FFFFFF; /* Blanco */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #1EFF8F; /* Verde Eléctrico */
+}
+
+/* Sección Juegos */
+.juegos {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem 0;
+    text-align: center;
+}
+.juegos ul {
+    list-style-type: none;
+    padding: 1.5rem;
+    background-color: #1B1B1E; /* Negro Mate */
+    border-radius: 8px;
+}
+.juegos li {
+    color: #FFFFFF; /* Blanco */
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+/* Formulario de Reserva */
+.reserva {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin: 2rem 0;
+}
+form {
+    background-color: #2E2E3E; /* Gris Oscuro */
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+form label {
+    display: block;
+    color: #FFFFFF; /* Blanco */
+    margin-top: 1rem;
+}
+form input, form button {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    border: none;
+}
+form button {
+    background-color: #1EFF8F; /* Verde Eléctrico */
+    color: #1B1B1E; /* Negro Mate */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #FF4DFF; /* Rosa Neon */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2D2354; /* Morado Oscuro */
+    color: #FFFFFF; /* Blanco */
+}
+
+.logo, .hero-text, .btn-cta {
+    text-shadow: 0 0 8px rgba(0, 217, 246, 0.8), 0 0 16px rgba(0, 217, 246, 0.5);
+}
+.btn-cta:hover {
+    box-shadow: 0 0 12px rgba(255, 77, 255, 0.8), 0 0 24px rgba(255, 77, 255, 0.6);
+}
+body {
+    background: linear-gradient(45deg, #2D2354, #1B1B1E, #1EFF8F, #FF4DFF);
+    background-size: 800% 800%;
+    animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.btn-cta {
+    border: 2px solid #00D9F6;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive; /* Fuente estilo retro */
+}
+.btn-cta:hover {
+    animation: flicker 0.15s infinite alternate;
+}
+@keyframes flicker {
+    0% { color: #FF4DFF; }
+    100% { color: #00D9F6; }
+}
+.hero-text {
+    position: relative;
+    color: #00D9F6;
+}
+.hero-text::before, .hero-text::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    color: #FF4DFF;
+    background: #1B1B1E;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch 2s infinite;
+}
+.hero-text::before {
+    left: 2px;
+    text-shadow: -2px 0 #FF4DFF;
+    animation-delay: 0.2s;
+}
+.hero-text::after {
+    left: -2px;
+    text-shadow: -2px 0 #00D9F6;
+    animation-delay: 0.4s;
+}
+
+@keyframes glitch {
+    0% { clip: rect(0, 900px, 0, 0); }
+    10%, 90% { clip: rect(0, 900px, 40px, 0); }
+    20%, 80% { clip: rect(0, 900px, 20px, 0); }
+    30%, 70% { clip: rect(0, 900px, 0, 0); }
+    40%, 60% { clip: rect(0, 900px, 30px, 0); }
+    50% { clip: rect(0, 900px, 10px, 0); }
+}
+.entrada {
+    background-color: #2E2E3E;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 45%;
+    color: #FFFFFF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.entrada:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 4px 15px rgba(30, 255, 143, 0.5);
+}
+.btn-cta {
+    background: linear-gradient(270deg, #00D9F6, #FF4DFF, #1EFF8F);
+    background-size: 600% 600%;
+    animation: gradientMove 4s ease infinite;
+    color: #FFFFFF;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
